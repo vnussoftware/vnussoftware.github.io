@@ -8,6 +8,13 @@ html, body {
     white-space: nowrap;
 }
 
+.chr {
+    white-space: nowrap;
+    width: 13em;
+    text-align:right;
+    padding-right:2em;
+}
+
 .checkbox + .checkbox, .radio + .radio {
     margin-top: 0px !important; 
 }
@@ -140,3 +147,4 @@ div.colorPicker-swatch {
     left: 0; 
  }
  
+

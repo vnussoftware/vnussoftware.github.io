@@ -12,14 +12,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <!-- CSS Files -->
 
-    <link rel="stylesheet" href="Content/css/material-kit.css" >
+    <link rel="stylesheet" href="material-kit.css" >
     
 	
 </head>
 <body style="background-color: white">
-
-
-
                 <ul class="nav nav-tabs nav-justified navbar-info">
                     <li><a data-toggle="tab" href="#sheet1">Test<!--Insufficiency Evaluation I--></a></li>
                     <li><a data-toggle="tab" href="#sheet2">Test II<!--Insufficiency Evaluation II--></a></li>
@@ -94,7 +91,7 @@
                                                     <input class="form-control datepicker" type="date" value="" id="ExamDate">
                                                 </div>
                                                 <div class="col-sm-4 form-group checkbox">
-                                                    <label for="inlineCheckbox1">Limb </label>
+                                                    <label for="inlineCheckbox1" class="chr">Limb </label>
 
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> RT
@@ -124,8 +121,8 @@
 
                                         <div class="panel-body">
                                             <div class="row">
-                                                <div class="form-group col-sm-4 checkbox">
-                                                    <label for="DVTRight">DVT</label>
+                                                <div class="form-group col-sm-6 checkbox">
+                                                    <label for="DVTRight" class="chr">DVT</label>
 
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="DVTRight" value="option1"> RT
@@ -134,8 +131,8 @@
                                                         <input class="form-check-input" type="checkbox" id="DVTRight" value="option2"> LT
                                                     </label>
                                                 </div>
-                                                <div class="form-group col-sm-4 checkbox">
-                                                    <label for="SVTRight">SVT</label>
+                                                <div class="form-group col-sm-6 checkbox">
+                                                    <label for="SVTRight" class="chr">SVT</label>
 
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="SVTRight" value="option1"> RT
@@ -144,8 +141,10 @@
                                                         <input class="form-check-input" type="checkbox" id="SVTRight" value="option2"> LT
                                                     </label>
                                                 </div>
-                                                <div class="form-group col-sm-4 radio">
-                                                    <label for="Diabetes">Diabetes</label>
+                                                </div>
+                                            <div class="row">
+                                                <div class="form-group col-sm-6 radio">
+                                                    <label for="Diabetes" class="chr">Diabetes</label>
 
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="radio" name="Diabetes" id="inlineRadio3" value="option11"> Y
@@ -155,12 +154,10 @@
                                                     </label>
 
                                                 </div>
-                                                </div>
-                                            <div class="row">
-
+                                            
                                                 <div class="form-group col-sm-6 radio">
 
-                                                    <label for="BloodThinners">Blood Thinners</label>
+                                                    <label for="BloodThinners" class="chr">Blood Thinners</label>
 
 
                                                     <label class="form-check-inline">
@@ -171,21 +168,22 @@
                                                     </label>
 
                                                 </div>
-
-                                                <div class="form-group col-sm-6 radio">
-
-                                                    <label for="CompStockings">Compression Stockings</label>
-
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="CompStockings" id="inlineRadio1" value="option1"> Y
-                                                    </label>
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="CompStockings" id="inlineRadio2" value="option2"> N
-                                                    </label>
-
-
                                                 </div>
-                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-sm-6 radio">
+
+                                                        <label for="CompStockings" class="chr">Compression Stockings</label>
+
+                                                        <label class="form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="CompStockings" id="inlineRadio1" value="option1"> Y
+                                                        </label>
+                                                        <label class="form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="CompStockings" id="inlineRadio2" value="option2"> N
+                                                        </label>
+                                                        </div>
+
+                                                    </div>
+                                                
                                             </div>
                                     </div>
                                     <div class="panel panel-default">
@@ -195,7 +193,7 @@
                                         <div class="panel-body">
                                             <div class="row">
                                                 <div class="form-group col-sm-6 radio">
-                                                    <label for="DVTRight" >DVT RT</label>
+                                                    <label for="DVTRight" class="chr">DVT RT</label>
 
                                                         <label class="form-check-inline">
                                                             <input class="form-check-input" type="radio" name="DVTRight" id="inlineRadio1" value="option1"> Y
@@ -206,7 +204,7 @@
                                               
                                                 </div>
                                                 <div class="form-group col-sm-6 radio">
-                                                    <label for="DVTLeft" >DVT LT</label>
+                                                    <label for="DVTLeft" class="chr">DVT LT</label>
 
                                                     
                                                         <label class="form-check-inline">
@@ -221,7 +219,7 @@
                                             <div class="row">
 
                                                 <div class="form-group col-sm-6 radio">
-                                                    <label for="DVRRight" >DVR RT</label>
+                                                    <label for="DVRRight" class="chr" >DVR RT</label>
 
                                                   
                                                         <label class="form-check-inline">
@@ -234,7 +232,7 @@
                                                 </div>
 
                                                 <div class="form-group col-sm-6 radio">
-                                                    <label for="DVRLeft" >DVR LT</label>
+                                                    <label for="DVRLeft" class="chr">DVR LT</label>
 
                                                     
                                                         <label class="form-check-inline">
@@ -254,141 +252,102 @@
                                             <h3 class="panel-title">Superficial Venous Evaluation</h3>
                                         </div>
                                         <div class="panel-body">
-                                            <div class="form-group row">
-                                                <div class="form-group col-sm-6">
+                                            <div class="row">
+                                            
                                                     <label for="" class="col-xs-3 col-form-label">GSV</label>
+                                            </div>
+                                            <div class="row">
 
-                                                    <label for="" class="col-xs-1 col-form-label">RT</label>
-                                                    <label for="" class="col-xs-1 col-form-label">LT</label>
+                                                <div class="form-group col-sm-6 checkbox">
+                                                    <label for="SFJRight" class="chr">SFJ</label>
+                                                        <label class="form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="SFJRight" value="option1">RT
+                                                        </label>
+                                                        <label class="form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="SFJLeft" value="option2">LT
+                                                        </label>
                                                 </div>
 
-                                                <div class="form-group col-sm-6">
-                                                    <label for="" class="col-xs-3 col-form-label"></label>
-                                                    <label for="" class="col-xs-1 col-form-label">RT</label>
-                                                    <label for="" class="col-xs-1 col-form-label">LT</label>
+                                                <div class="form-group col-sm-6 checkbox">
+                                                    <label for="ProximalCalfRight" class="chr">Proximal Calf</label>
+                                                        <label class="form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="ProximalCalfRight" value="option1">RT
+                                                        </label>
+                                                        <label class="form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="ProximalCalfLeft" value="option2">LT
+                                                        </label>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
-
-                                                <div class="form-group col-sm-6">
-                                                    <label for="SFJRight" class="col-xs-3 col-form-label">SFJ</label>
-                                                    <div class="col-sm-1">
+                                            <div class="row">
+                                                <div class="form-group col-sm-6 checkbox">
+                                                    <label for="ProximalThighRight" class="chr">Proximal Thigh</label>
                                                         <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="SFJRight" value="option1">
+                                                            <input class="form-check-input" type="checkbox" id="ProximalThighRight" value="option1">RT
                                                         </label>
-                                                    </div>
-                                                    <div class="col-sm-1">
                                                         <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="SFJLeft" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="ProximalThighLeft" value="option2">LT
                                                         </label>
-                                                    </div>
                                                 </div>
+                                                <div class="form-group col-sm-6 checkbox">
 
-                                                <div class="form-group col-sm-6">
-                                                    <label for="ProximalCalfRight" class="col-xs-3 col-form-label">Proximal Calf</label>
-                                                    <div class="col-sm-1">
+                                                    <label for="MidCalfRight" class="chr">Mid Calf</label>
                                                         <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="ProximalCalfRight" value="option1">
+                                                            <input class="form-check-input" type="checkbox" id="MidCalfRight" value="option1">RT
                                                         </label>
-                                                    </div>
-                                                    <div class="col-sm-1">
                                                         <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="ProximalCalfLeft" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="MidCalfLeft" value="option2">LT
                                                         </label>
-                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
-                                                <div class="form-group col-sm-6">
+                                            <div class="row">
+                                                <div class="form-group col-sm-6 checkbox">
 
-                                                    <label for="ProximalThighRight" class="col-xs-3 col-form-label">Proximal Thigh</label>
-                                                    <div class="col-sm-1">
+                                                    <label for="MidThighRight" class="chr">Mid Thigh</label>
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="MidThighRight" value="option1">RT
+                                                    </label>
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="MidThighLeft" value="option2">LT
+                                                    </label>
+                                                </div>    
+                                                <div class="form-group col-sm-6 checkbox">
+
+                                                    <label for="DistalCalfRight" class="chr">Distal Calf</label>
+                                                    
                                                         <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="ProximalThighRight" value="option1">
+                                                            <input class="form-check-input" type="checkbox" id="DistalCalfRight" value="option1">RT
                                                         </label>
-                                                    </div>
-                                                    <div class="col-sm-1">
                                                         <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="ProximalThighLeft" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="DistalCalfLeft" value="option2">LT
                                                         </label>
-                                                    </div>
                                                 </div>
-                                                <div class="form-group col-sm-6">
-
-                                                    <label for="MidCalfRight" class="col-xs-3 col-form-label">Mid Calf</label>
-                                                    <div class="col-sm-1">
-                                                        <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="MidCalfRight" value="option1">
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-sm-1">
-                                                        <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="MidCalfLeft" value="option2">
-                                                        </label>
-                                                    </div>
+                                            
                                                 </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="form-group col-sm-6">
+                                            <div class="row">
+                                                <div class="form-group col-sm-6 checkbox">
 
-                                                    <label for="MidThighRight" class="col-xs-3 col-form-label">Mid Thigh</label>
-                                                    <div class="col-sm-1">
+                                                    <label for="DistalThighRight" class="chr">Distal Thigh</label>
                                                         <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="MidThighRight" value="option1">
+                                                            <input class="form-check-input" type="checkbox" id="DistalThighRight" value="option1">RT
                                                         </label>
-                                                    </div>
-                                                    <div class="col-sm-1">
                                                         <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="MidThighLeft" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="DistalThighLeft" value="option2">LT
                                                         </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group col-sm-6">
-
-                                                    <label for="DistalCalfRight" class="col-xs-3 col-form-label">Distal Calf</label>
-                                                    <div class="col-sm-1">
-                                                        <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="DistalCalfRight" value="option1">
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-sm-1">
-                                                        <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="DistalCalfLeft" value="option2">
-                                                        </label>
-                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
-                                                <div class="form-group col-sm-6">
-
-                                                    <label for="DistalThighRight" class="col-xs-3 col-form-label">Distal Thigh</label>
-                                                    <div class="col-sm-1">
-                                                        <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="DistalThighRight" value="option1">
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-sm-1">
-                                                        <label class="form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="DistalThighLeft" value="option2">
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
+                                            <div class=" row">
 
                                                 <div class="form-group col-sm-6">
                                                     <label for="SFJRight" class="col-xs-3 col-form-label"></label>
-                                                    <label for="SFJRight" class="col-xs-1 col-form-label">RT</label>
                                                 </div>
                                                 <div class="form-group col-sm-6">
                                                     <label for="SFJRight" class="col-xs-3 col-form-label"></label>
-                                                    <label for="SFJRight" class="col-xs-1 col-form-label">LT</label>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
+                                            <div class="row">
 
-                                                <div class="form-group col-sm-6">
-                                                    <label for="AASVPresentRight" class="col-xs-3 col-form-label">AASV Present</label>
+                                                <div class="form-group col-sm-6 radio">
+                                                    <label for="AASVPresentRight" class="chr">AASV Present RT</label>
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="radio" name="AASVPresentRight" id="inlineRadio1" value="option1"> Y
                                                     </label>
@@ -396,8 +355,8 @@
                                                         <input class="form-check-input" type="radio" name="AASVPresentRight" id="inlineRadio2" value="option2"> N
                                                     </label>
                                                 </div>
-                                                <div class="form-group col-sm-6">
-                                                    <label for="AASVPresentLeft" class="col-xs-3 col-form-label"></label>
+                                                <div class="form-group col-sm-6 radio">
+                                                    <label for="AASVPresentLeft" class="chr">AASV Present LT</label>
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="radio" name="AASVPresentLeft" id="inlineRadio1" value="option1"> Y
                                                     </label>
@@ -406,11 +365,10 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
+                                            <div class="row">
 
-                                                <div class="form-group col-sm-6">
-                                                    <label for="AASVRefluxRight" class="col-xs-1 col-form-label"></label>
-                                                    <label for="AASVRefluxRight" class="col-xs-2 col-form-label">Reflux</label>
+                                                <div class="form-group col-sm-6 radio">
+                                                    <label for="AASVRefluxRight" class="chr">Reflux RT</label>
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="radio" name="AASVRefluxRight" id="inlineRadio1" value="option1"> Y
                                                     </label>
@@ -418,8 +376,8 @@
                                                         <input class="form-check-input" type="radio" name="AASVRefluxRight" id="inlineRadio2" value="option2"> N
                                                     </label>
                                                 </div>
-                                                <div class="form-group col-sm-6">
-                                                    <label for="AASVRefluxLeft" class="col-xs-3 col-form-label"></label>
+                                                <div class="form-group col-sm-6 radio">
+                                                    <label for="AASVRefluxLeft" class="chr">Reflux LT</label>
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="radio" name="AASVRefluxLeft" id="inlineRadio1" value="option1"> Y
                                                     </label>
@@ -428,10 +386,10 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
+                                            <div class="row">
 
-                                                <div class="form-group col-sm-6">
-                                                    <label for="PASVPresentRight" class="col-xs-3 col-form-label">PASV Present</label>
+                                                <div class="form-group col-sm-6 radio">
+                                                    <label for="PASVPresentRight" class="chr">PASV Present RT</label>
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="radio" name="PASVPresentRight" id="inlineRadio1" value="option1"> Y
                                                     </label>
@@ -439,8 +397,8 @@
                                                         <input class="form-check-input" type="radio" name="PASVPresentRight" id="inlineRadio2" value="option2"> N
                                                     </label>
                                                 </div>
-                                                <div class="form-group col-sm-6">
-                                                    <label for="PASVPresentLeft" class="col-xs-3 col-form-label"></label>
+                                                <div class="form-group col-sm-6 radio">
+                                                    <label for="PASVPresentLeft" class="chr">PASV Present LT</label>
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="radio" name="PASVPresentLeft" id="inlineRadio1" value="option1"> Y
                                                     </label>
@@ -449,11 +407,11 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
+                                            <div class="row">
 
-                                                <div class="form-group col-sm-6">
-                                                    <label for="PASVRefluxRight" class="col-xs-1 col-form-label"></label>
-                                                    <label for="PASVRefluxRight" class="col-xs-2 col-form-label">Reflux</label>
+                                                <div class="form-group col-sm-6 radio">
+                                                    
+                                                    <label for="PASVRefluxRight" class="chr">Reflux RT</label>
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="radio" name="PASVRefluxRight" id="inlineRadio1" value="option1"> Y
                                                     </label>
@@ -461,8 +419,8 @@
                                                         <input class="form-check-input" type="radio" name="PASVRefluxRight" id="inlineRadio2" value="option2"> N
                                                     </label>
                                                 </div>
-                                                <div class="form-group col-sm-6">
-                                                    <label for="PASVRefluxLeft" class="col-xs-3 col-form-label"></label>
+                                                <div class="form-group col-sm-6 radio">
+                                                    <label for="PASVRefluxLeft" class="chr">Reflux LT</label>
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="radio" name="PASVRefluxLeft" id="inlineRadio1" value="option1"> Y
                                                     </label>
@@ -472,6 +430,8 @@
                                                 </div>
                                             </div>
                                         </div>
+                                            </div>
+                                        
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">Perforators</h3>
