@@ -23,40 +23,41 @@
                     <li><a data-toggle="tab" href="#sheet3">Test III<!--Post Op Venous Ablation--></a></li>
                 </ul>
 
-                <div class="unselectable" onselectstart="return false;" style="float: left; width: 100%; padding-top: 18px; padding-left: 20px;  ">
-                    <div style="float: left; width: 95px;">
-                        <button id="invert">b/w</button>
-                    </div>
+             
+                <div class="unselectable" onselectstart="return false;" id="editor" style="height: 655px; width: 477px; background-position: right 30px ; position: absolute; background-repeat: no-repeat; margin-top:5px;">
+                    <div class="unselectable" onselectstart="return false;" style="width: 100%;  padding-left: 20px;  ">
+                        <div style="float: left; width: 95px;">
+                            <button id="invert">b/w</button>
+                        </div>
 
-                    <div style="float: left; width: 60px;">
-                        <button id="undo">Undo</button>
-                    </div>
-                    <div style="float: left; width: 60px;">
-                        <button id="redo" style="float: left;">Redo</button>
-                    </div>
-                    <div style="float: left; width: 60px;">
-                        <button id="clear" style="float: left;">Clear</button>
-                    </div>
+                        <div style="float: left; width: 60px;">
+                            <button id="undo">Undo</button>
+                        </div>
+                        <div style="float: left; width: 60px;">
+                            <button id="redo" style="float: left;">Redo</button>
+                        </div>
+                        <div style="float: left; width: 60px;">
+                            <button id="clear" style="float: left;">Clear</button>
+                        </div>
 
-                    <div style="float: left; width: 70px;">
-                        <label id="sellabel" for="sel1" style="float: left; padding-right:3px;">Pen </label>
-                        <select id="sel1" name="sel1" style="margin-top: 2px;float: left; ">
-                            <option value="2">1</option> <!--  1 px is too thin. start with 2px-->
-                            <option value="3">2</option>
-                            <option value="4">3</option>
-                            <option value="5">4</option>
-                            <option value="6">5</option>
-                        </select>
+                        <div style="float: left; width: 70px;">
+                            <label id="sellabel" for="sel1" style="float: left; padding-right:3px;">Pen </label>
+                            <select id="sel1" name="sel1" style="margin-top: 2px;float: left; ">
+                                <option value="2">1</option> <!--  1 px is too thin. start with 2px-->
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                            </select>
+                        </div>
+                        <div style="float: left; width: 60px; padding-top: 2px">
+                            <input id="colorpicker" name="colorpicker" type="text" value="#ff0000" style="width: 20px;" />
+                        </div>
                     </div>
-                    <div style="float: left; width: 60px; padding-top: 2px">
-                        <input id="colorpicker" name="colorpicker" type="text" value="#ff0000" style="width: 20px;" />
-                    </div>
-                </div>
-                <div class="unselectable" onselectstart="return false;" id="editor" style="height: 625px; width: 477px;  position: absolute; background-repeat: no-repeat; margin-top:45px">
                     <canvas id="sketchpad"></canvas>
                 </div>
 
-                <div class="panel panel-default" style="float: left; width : 100%;height : 100%">
+                <div class="panel panel-default" style="float: left; width : 100%;height : 100%; padding-top:10px;">
                     <div class="tab-content">
                         <div id="sheet1" class="tab-pane fade">
 
@@ -64,12 +65,12 @@
                             </div>
                             <div class="col-sm-8">
                                 <form  role="form"  class="form-vertical">
-                                    <div class="panel panel-default">
+                                    <div class="panel panel-default" >
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Patient</h3>
                                         </div>
-                                        <div class="panel-body">
-                                            <div class="row">
+                                        <div class="panel-body" >
+                                            <div class="row"  style="padding-left: 5px;  ">
                                                 <div class="col-sm-4 form-group label-floating">
                                                     <label for="PatientName" class="control-label" >Patient Name</label>
                                                     
@@ -86,7 +87,7 @@
                                                     <input class="form-control" type="text" value="" id="Physician">
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="row"   style="padding-left: 5px;  ">
                                                 <div class="col-sm-4 form-group label-floating">
                                                     <label for="ExamDate" class="control-label nowrap">Procedure Date </label>
                                                     <!--<label for="ExamDate" class="col-xs-1 control-label nowrap">Procedure Date</label>-->
@@ -255,9 +256,10 @@
                                         </div>
                                         <div class="panel-body">
                                             <div class="row">
-                                            
-                                                    <label for="" class="col-xs-3 col-form-label">GSV</label>
-                                            </div>
+                                                <div class="col-sm-3">
+                                                    <h6>GSV</h6>
+                                                    </div>
+                                                </div>
                                             <div class="row">
 
                                                 <div class="form-group col-sm-6 checkbox">
@@ -439,198 +441,181 @@
                                                 <h3 class="panel-title">Perforators</h3>
                                             </div>
                                             <div class="panel-body">
-                                                <div class="panel panel-default">
-                                                    <div class="panel-body">
-                                                        <div class="group">
-                                                            <div class="form-group row">
-                                                                <div class="col-sm-1">
-                                                                    <label><u>Thigh</u></label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-                                                                <div class="col-sm-1">
-                                                                    <label><u>Right</u></label>
-                                                                </div>
+                                                           
+                                                            <div class="row">
+                                                                <div class="col-sm-3">
+                                                                    <h6>Right Thigh</h6>
+</div>
                                                             </div>
                                                             <div class="row">
                                                                 
                                                                 <div class="col-sm-4 form-group label-floating">
                                                                     <label for="PerforatorsThighRightCmUp" class="control-label">cm up</label>
-                                                                    
+                                                                   
                                                                         <input class="form-control" type="text" value="" id="PerforatorsThighRightCmUp">
                                                                     
                                                                 </div>
-                                                                <label for="PerforatorsThighRightCmBack" class="col-xs-1 col-form-label">cm back</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsThighRightCmBack">
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsThighRightCmBack" class="control-label">cm back</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsThighRightCmBack">
+                                                                    </div>
+
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsThighRightDiameter" class="control-label">diameter</label>
+                                                                  
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsThighRightDiameter">
+                                                                    </div>
+
                                                                 </div>
-
-
-                                                                <label for="PerforatorsThighRightDiameter" class="col-xs-1 col-form-label">diameter</label>
+                                                            <div class="row">
                                                                 <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsThighRightDiameter">
-                                                                </div>
-
+                                                                    <h6>Left Thigh</h6>
+</div>
                                                             </div>
-                                                            <div class="form-group row">
-                                                                <div class="col-sm-1">
-                                                                    <label><u>Left</u></label>
+                                                            <div class="row">
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsThighLeftCmUp" class="control-label">cm up</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsThighLeftCmUp">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsThighLeftCmBack" class="control-label">cm back</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsThighLeftCmBack">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsThighLeftDiameter" class="control-label">diameter</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsThighLeftDiameter">
+                                                                    </div>
                                                                 </div>
+                                                     
+                                                   
+                                                            <div class="row">
+                                                                <div class="col-sm-3">
+                                                                    <h6>Right Calf</h6>
+</div>
                                                             </div>
-                                                            <div class="form-group row">
+                                                           
+                                                            <div class="row">
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfRightCmUp" class="control-label">cm up</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmUp">
+                                                                    </div>
 
-                                                                <label for="PerforatorsThighLeftCmUp" class="col-xs-1 col-form-label">cm up</label>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfRightCmBack" class="control-label">cm back</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmBack">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfRightDiameter" class="control-label">diameter</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfRightDiameter">
+                                                                    </div>
+                                                                </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfRightCmUp1" class="control-label">cm up</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmUp1">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfRightCmBack1" class="control-label">cm back</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmBack1">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfRightDiameter1" class="control-label">diameter</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfRightDiameter1">
+                                                                    </div>
+                                                                </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfRightCmUp2" class="control-label">cm up</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmUp2">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfRightCmBack2" class="control-label">cm back</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmBack2">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfRightDiameter2" class="control-label">diameter</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfRightDiameter2">
+                                                                    </div>
+                                                                </div>
+                                                            
+                                                            <div class="row">
                                                                 <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsThighLeftCmUp">
-                                                                </div>
-
-                                                                <label for="PerforatorsThighLeftCmBack" class="col-xs-1 col-form-label">cm back</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsThighLeftCmBack">
-                                                                </div>
-
-                                                                <label for="PerforatorsThighLeftDiameter" class="col-xs-1 col-form-label">diameter</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsThighLeftDiameter">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="panel panel-default">
-                                                    <div class="panel-body">
-                                                        <div class="group">
-                                                            <div class="form-group row">
-                                                                <div class="col-sm-1">
-                                                                    <label><u>Calf</u></label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-                                                                <div class="col-sm-1">
-                                                                    <label><u>Right</u></label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-
-                                                                <label for="PerforatorsCalfRightCmUp" class="col-xs-1 col-form-label">cm up</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmUp">
-                                                                </div>
-
-
-                                                                <label for="PerforatorsCalfRightCmBack" class="col-xs-1 col-form-label">cm back</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmBack">
-                                                                </div>
-
-                                                                <label for="PerforatorsCalfRightDiameter" class="col-xs-1 col-form-label">diameter</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfRightDiameter">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-
-                                                                <label for="PerforatorsCalfRightCmUp1" class="col-xs-1 col-form-label">cm up</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmUp1">
-                                                                </div>
-
-                                                                <label for="PerforatorsCalfRightCmBack1" class="col-xs-1 col-form-label">cm back</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmBack1">
-                                                                </div>
-
-                                                                <label for="PerforatorsCalfRightDiameter1" class="col-xs-1 col-form-label">diameter</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfRightDiameter1">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-
-                                                                <label for="PerforatorsCalfRightCmUp2" class="col-xs-1 col-form-label">cm up</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmUp2">
-                                                                </div>
-
-                                                                <label for="PerforatorsCalfRightCmBack2" class="col-xs-1 col-form-label">cm back</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfRightCmBack2">
-                                                                </div>
-
-                                                                <label for="PerforatorsCalfRightDiameter2" class="col-xs-1 col-form-label">diameter</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfRightDiameter2">
+                                                                    <h6>Left Calf</h6>
                                                                 </div>
                                                             </div>
-                                                            <div class="form-group row">
-                                                            </div>
-                                                            <div class="form-group row">
-                                                                <div class="col-sm-1">
-                                                                    <label><u>Left</u></label>
+                                                            <div class="row">
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfLeftCmUp" class="control-label">cm up</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmUp">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfLeftCmBack" class="control-label">cm back</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmBack">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfLeftDiameter" class="control-label">diameter</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfLeftDiameter">
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="form-group row">
-
-                                                                <label for="PerforatorsCalfLeftCmUp" class="col-xs-1 col-form-label">cm up</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmUp">
+                                                            <div class="row">
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfLeftCmUp1" class="control-label">cm up</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmUp1">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfLeftCmBack1" class="control-label">cm back</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmBack1">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfLeftDiameter2" class="control-label">diameter</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfLeftDiameter2">
+                                                                    </div>
                                                                 </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfLeftCmUp2" class="control-label">cm up</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmUp2">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfLeftCmBack2" class="control-label">cm back</label>
+                                                                    
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmBack2">
+                                                                    </div>
+                                                                <div class="col-sm-4 form-group label-floating">
+                                                                    <label for="PerforatorsCalfLeftDiameter2" class="control-label">diameter</label>
+                                                                   
+                                                                        <input class="form-control" type="text" value="" id="PerforatorsCalfLeftDiameter2">
+                                                                    </div>
 
-                                                                <label for="PerforatorsCalfLeftCmBack" class="col-xs-1 col-form-label">cm back</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmBack">
                                                                 </div>
-
-                                                                <label for="PerforatorsCalfLeftDiameter" class="col-xs-1 col-form-label">diameter</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfLeftDiameter">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-
-                                                                <label for="PerforatorsCalfLeftCmUp1" class="col-xs-1 col-form-label">cm up</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmUp1">
-                                                                </div>
-
-                                                                <label for="PerforatorsCalfLeftCmBack1" class="col-xs-1 col-form-label">cm back</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmBack1">
-                                                                </div>
-
-                                                                <label for="PerforatorsCalfLeftDiameter2" class="col-xs-1 col-form-label">diameter</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfLeftDiameter2">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-
-                                                                <label for="PerforatorsCalfLeftCmUp2" class="col-xs-1 col-form-label">cm up</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmUp2">
-                                                                </div>
-
-                                                                <label for="PerforatorsCalfLeftCmBack2" class="col-xs-1 col-form-label">cm back</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfLeftCmBack2">
-                                                                </div>
-
-                                                                <label for="PerforatorsCalfLeftDiameter2" class="col-xs-1 col-form-label">diameter</label>
-                                                                <div class="col-sm-3">
-                                                                    <input class="form-control" type="text" value="" id="PerforatorsCalfLeftDiameter2">
-                                                                </div>
-
-                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                
+                                           
+                                        
 
                                 </form>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                     <div id="sheet2" class="tab-pane fade">
