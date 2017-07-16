@@ -15,6 +15,11 @@ html, body {
     padding-right:2em;
 }
 
+.datepicker
+{
+  text-align: right
+}
+
 .checkbox + .checkbox, .radio + .radio {
     margin-top: 0px !important; 
 }

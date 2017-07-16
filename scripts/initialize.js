@@ -39,6 +39,16 @@ function SetJSonValue(setJSon) {
 
 $(document).ready(function () {
 
+ $('.datepicker').datepicker({
+    format: 'dd/mm/yyyy',
+    todayHighlight:'TRUE',
+    autoclose: true,
+}).on('changeDate', function (ev) {
+          $(this).keyup();
+     $(this).datepicker('hide');
+
+});
+
     var bkColor = "white";
     var SheetNum = location.search.split('SheetNum=')[1];
     var fileName = "url('images/sheet" + SheetNum + bkColor + ".png')";
