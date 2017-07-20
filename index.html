@@ -921,78 +921,78 @@
                         </div>
                         <div class="col-sm-8">
                             <form>
-                                <div class="form-group row">
-
-                                    <label for="PatientName" class="col-xs-1 col-form-label">Patient Name :</label>
-                                    <div class="col-sm-3">
-                                        <input class="form-control" type="text" value="" id="PatientName">
+                                <div class="row">
+                                    <div class="col-sm-4 form-group label-floating">
+                                        <label for="PatientName" class="control-label">Patient Name</label>
+                                      
+                                            <input class="form-control" type="text" value="" id="PatientName">
+                                        </div>
+                                    <div class="col-sm-4 form-group label-floating">
+                                        <label for="DOB" class="control-label">DOB</label>
+                                        
+                                            <input class="form-control datepicker" type="text" value="" id="DOB">
+                                        </div>
                                     </div>
+                                <div class="row">
 
-                                    <label for="DOB" class="col-xs-1 col-form-label">DOB: </label>
-                                    <div class="col-sm-3">
-                                        <input class="form-control" type="date" value="" id="DOB">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
+                                    <div class="col-sm-4 form-group label-floating">
+                                        <label for="Date" class="control-label">Date</label>
+                                        
+                                            <input class="form-control datepicker" type="text" value="" id="Date">
+                                        </div>
+                                    <div class="col-sm-4 form-group checkbox">
+                                        <label for="inlineCheckbox1" class="chr">Limb</label>
+                                        
+                                            <label class="form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> RT
+                                            </label>
+                                            <label class="form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2"> LT
+                                            </label>
 
-
-                                    <label for="Date" class="col-xs-1 col-form-label">Date: </label>
-                                    <div class="col-sm-3">
-                                        <input class="form-control" type="date" value="" id="Date">
-                                    </div>
-
-                                    <label for="inlineCheckbox1" class="col-xs-1 col-form-label">Limb : </label>
-                                    <div class="col-sm-2">
-                                        <label class="form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> RT
-                                        </label>
-                                        <label class="form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2"> LT
-                                        </label>
-
-                                    </div>
+                                        </div>
 
 
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-4 form-group checkbox">
                                         <label class="form-check-inline">
                                             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Bilateral
                                         </label>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-
-                                    <label for="ProcedureDate" class="col-xs-1 col-form-label">Procedure Date:</label>
-                                    <div class="col-sm-3">
-                                        <input class="form-control" type="date" value="" id="ProcedureDate">
                                     </div>
-
-                                    <label for="TimePostOp" class="col-xs-1 col-form-label">Time Post-Op:</label>
-                                    <div class="col-sm-3">
-                                        <input class="form-control" type="text" value="" id="TimePostOp">
+                                <div class="row">
+                                    <div class="col-sm-4 form-group label-floating">
+                                        <label for="ProcedureDate" class="control-label">Procedure Date</label>
+                                        
+                                            <input class="form-control datepicker" type="text" value="" id="ProcedureDate">
+                                        </div>
+                                    <div class="col-sm-4 form-group label-floating">
+                                        <label for="TimePostOp" class="control-label">Time Post-Op</label>
+                                        
+                                            <input class="form-control" type="text" value="" id="TimePostOp">
+                                        </div>
                                     </div>
-                                </div>
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">PATIENT HISTORY</h3>
                                     </div>
                                     <div class="panel-body">
                                         <div class="row">
-                                            <div class="col-sm-2">
+                                            <div class="col-sm-2 form-group checkbox">
                                                 <label class="form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> DVT
                                                 </label>
                                             </div>
-                                            <div class="col-sm-2">
+                                            <div class="col-sm-2 form-group checkbox">
                                                 <label class="form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Diabetes
                                                 </label>
                                             </div>
-                                            <div class="col-sm-2">
+                                            <div class="col-sm-2 form-group checkbox">
                                                 <label class="form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Blood Thinners
                                                 </label>
                                             </div>
-                                            <div class="col-sm-2">
+                                            <div class="col-sm-2 form-group checkbox">
                                                 <label class="form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Vein strip
                                                 </label>
@@ -1009,7 +1009,7 @@
                                             <div class="col-sm-2">
                                                 <label></label>
                                             </div>
-                                            <div class="col-sm-2">
+                                            <div class="col-sm-2 form-group radio">
                                                 <label class="form-check-inline">
                                                     <input class="form-check-input" type="radio" name="DVT" id="inlineRadio1" value="option1"> Yes
                                                 </label>
@@ -1025,19 +1025,19 @@
                                         <h3 class="panel-title">GREATER SAPHENOUS VEIN</h3>
                                     </div>
                                     <div class="panel-body">
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="" class="col-xs-1 col-form-label"></label>
-                                            <label for="" class="col-xs-1 col-form-label">SFJ CLOT =</label>
+                                            <label for="" class="control-label"></label>
+                                            <label for="" class="control-label">SFJ CLOT =</label>
                                             <label for="" class="col-xs-2 col-form-label"></label>
                                             <label for="" class="col-xs-2 col-form-label">RT</label>
                                             <label for="" class="col-xs-2 col-form-label">LT</label>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="" class="col-xs-1 col-form-label">GSV</label>
-                                            <label for="" class="col-xs-1 col-form-label">Prox</label>
-                                            <label for="" class="col-xs-1 col-form-label">OCCLUDED</label>
+                                            <label for="" class="control-label">GSV</label>
+                                            <label for="" class="control-label">Prox</label>
+                                            <label for="" class="control-label">OCCLUDED</label>
                                             <div class="col-sm-2">
                                                 <input class="form-control" type="text" value="" id="GSVProxOccludedRight">
                                             </div>
@@ -1045,11 +1045,11 @@
                                                 <input class="form-control" type="text" value="" id="GSVProxOccludedLeft">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="" class="col-xs-1 col-form-label"></label>
-                                            <label for="" class="col-xs-1 col-form-label">Mid</label>
-                                            <label for="" class="col-xs-1 col-form-label">OCCLUDED</label>
+                                            <label for="" class="control-label"></label>
+                                            <label for="" class="control-label">Mid</label>
+                                            <label for="" class="control-label">OCCLUDED</label>
                                             <div class="col-sm-2">
                                                 <input class="form-control" type="text" value="" id="GSVMidOccludedRight">
                                             </div>
@@ -1058,11 +1058,11 @@
                                             </div>
 
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="" class="col-xs-1 col-form-label"></label>
-                                            <label for="" class="col-xs-1 col-form-label">Dist</label>
-                                            <label for="" class="col-xs-1 col-form-label">OCCLUDED</label>
+                                            <label for="" class="control-label"></label>
+                                            <label for="" class="control-label">Dist</label>
+                                            <label for="" class="control-label">OCCLUDED</label>
                                             <div class="col-sm-2">
                                                 <input class="form-control" type="text" value="" id="GSVDistOccludedRight">
                                             </div>
@@ -1071,11 +1071,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="" class="col-xs-1 col-form-label">GSV B-K</label>
-                                            <label for="" class="col-xs-1 col-form-label">Prox</label>
-                                            <label for="" class="col-xs-1 col-form-label">OCCLUDED</label>
+                                            <label for="" class="control-label">GSV B-K</label>
+                                            <label for="" class="control-label">Prox</label>
+                                            <label for="" class="control-label">OCCLUDED</label>
                                             <div class="col-sm-2">
                                                 <input class="form-control" type="text" value="" id="GSVBKProxOccludedRight">
                                             </div>
@@ -1083,11 +1083,11 @@
                                                 <input class="form-control" type="text" value="" id="GSVBKProxOccludedLeft">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="" class="col-xs-1 col-form-label"></label>
-                                            <label for="" class="col-xs-1 col-form-label">Mid</label>
-                                            <label for="" class="col-xs-1 col-form-label">OCCLUDED</label>
+                                            <label for="" class="control-label"></label>
+                                            <label for="" class="control-label">Mid</label>
+                                            <label for="" class="control-label">OCCLUDED</label>
                                             <div class="col-sm-2">
                                                 <input class="form-control" type="text" value="" id="GSVBKMidOccludedRight">
                                             </div>
@@ -1095,11 +1095,11 @@
                                                 <input class="form-control" type="text" value="" id="GSVBKMidOccludedLeft">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="" class="col-xs-1 col-form-label"></label>
-                                            <label for="" class="col-xs-1 col-form-label">Dist</label>
-                                            <label for="" class="col-xs-1 col-form-label">OCCLUDED</label>
+                                            <label for="" class="control-label"></label>
+                                            <label for="" class="control-label">Dist</label>
+                                            <label for="" class="control-label">OCCLUDED</label>
                                             <div class="col-sm-2">
                                                 <input class="form-control" type="text" value="" id="GSVBKDistOccludedRight">
                                             </div>
@@ -1108,9 +1108,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="" class="col-xs-1 col-form-label"></label>
+                                            <label for="" class="control-label"></label>
                                             <label for="" class="col-xs-2 col-form-label">AL Branch Noted:</label>
                                             <div class="col-sm-2">
                                                 <label class="form-check-inline">
@@ -1130,10 +1130,10 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
+                                        <div class="row">
 
                                             <label for="" class="col-xs-2 col-form-label"></label>
-                                            <label for="" class="col-xs-1 col-form-label">OCCLUDED</label>
+                                            <label for="" class="control-label">OCCLUDED</label>
                                             <div class="col-sm-2">
                                                 <input class="form-control" type="text" value="" id="ALBranchNotedOccludedRight">
                                             </div>
@@ -1142,9 +1142,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="" class="col-xs-1 col-form-label"></label>
+                                            <label for="" class="control-label"></label>
                                             <label for="" class="col-xs-2 col-form-label">PM Branch Noted:</label>
                                             <div class="col-sm-2">
                                                 <label class="form-check-inline">
@@ -1164,10 +1164,10 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
+                                        <div class="row">
 
                                             <label for="" class="col-xs-2 col-form-label"></label>
-                                            <label for="" class="col-xs-1 col-form-label">OCCLUDED</label>
+                                            <label for="" class="control-label">OCCLUDED</label>
                                             <div class="col-sm-2">
                                                 <input class="form-control" type="text" value="" id="PMBranchNotedOccludedRight">
                                             </div>
@@ -1183,81 +1183,81 @@
                                         <h3 class="panel-title">THIGH PERFORATORS</h3>
                                     </div>
                                     <div class="panel-body">
-                                        <div class="form-group row">
+                                        <div class="row">
                                             <div class="col-sm-1">
                                                 <label><u>Right</u></label>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="ThighPerforatorsRightCmUp" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="ThighPerforatorsRightCmUp" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsRightCmUp">
                                             </div>
 
-                                            <label for="ThighPerforatorsRightCmBack" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="ThighPerforatorsRightCmBack" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsRightCmBack">
                                             </div>
 
-                                            <label for="ThighPerforatorsRightDiameter" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="ThighPerforatorsRightDiameter" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsRightDiamter">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="ThighPerforatorsRightCmUp1" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="ThighPerforatorsRightCmUp1" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsRightCmUp1">
                                             </div>
 
-                                            <label for="ThighPerforatorsRightCmBack1" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="ThighPerforatorsRightCmBack1" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsRightCmBack1">
                                             </div>
 
-                                            <label for="ThighPerforatorsRightDiameter1" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="ThighPerforatorsRightDiameter1" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsRightDiamter1">
                                             </div>
 
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
                                             <div class="col-sm-1">
                                                 <label><u>Left</u></label>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="ThighPerforatorsLeftCmUp" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="ThighPerforatorsLeftCmUp" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsLeftCmUp">
                                             </div>
 
-                                            <label for="ThighPerforatorsLeftCmBack" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="ThighPerforatorsLeftCmBack" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsLeftCmBack">
                                             </div>
 
-                                            <label for="ThighPerforatorsLeftDiameter" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="ThighPerforatorsLeftDiameter" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsLeftDiamter">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="ThighPerforatorsLeftCmUp1" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="ThighPerforatorsLeftCmUp1" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsLeftCmUp1">
                                             </div>
 
-                                            <label for="ThighPerforatorsLeftCmBack1" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="ThighPerforatorsLeftCmBack1" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsLeftCmBack1">
                                             </div>
 
-                                            <label for="ThighPerforatorsLeftDiameter1" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="ThighPerforatorsLeftDiameter1" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="ThighPerforatorsLeftDiamter1">
                                             </div>
@@ -1270,114 +1270,114 @@
                                         <h3 class="panel-title">CALF PERFORATORS</h3>
                                     </div>
                                     <div class="panel-body">
-                                        <div class="form-group row">
+                                        <div class="row">
                                             <div class="col-sm-1">
                                                 <label><u>Right</u></label>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="CalfPerforatorsRightCmUp" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="CalfPerforatorsRightCmUp" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmUp">
                                             </div>
 
-                                            <label for="CalfPerforatorsRightCmBack" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="CalfPerforatorsRightCmBack" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmBack">
                                             </div>
 
-                                            <label for="CalfPerforatorsRightDiameter" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="CalfPerforatorsRightDiameter" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsRightDiamter">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="CalfPerforatorsRightCmUp1" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="CalfPerforatorsRightCmUp1" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmUp1">
                                             </div>
 
-                                            <label for="CalfPerforatorsRightCmBack1" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="CalfPerforatorsRightCmBack1" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmBack1">
                                             </div>
 
-                                            <label for="CalfPerforatorsRightDiameter1" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="CalfPerforatorsRightDiameter1" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsRightDiamter1">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="CalfPerforatorsRightCmUp2" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="CalfPerforatorsRightCmUp2" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmUp2">
                                             </div>
 
-                                            <label for="CalfPerforatorsRightCmBack2" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="CalfPerforatorsRightCmBack2" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmBack2">
                                             </div>
 
-                                            <label for="CalfPerforatorsRightDiameter2" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="CalfPerforatorsRightDiameter2" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsRightDiamter2">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
                                             <div class="col-sm-1">
                                                 <label><u>Left</u></label>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="CalfPerforatorsLeftCmUp" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="CalfPerforatorsLeftCmUp" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmUp">
                                             </div>
 
-                                            <label for="CalfPerforatorsLeftCmBack" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="CalfPerforatorsLeftCmBack" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmBack">
                                             </div>
 
-                                            <label for="CalfPerforatorsLeftDiameter" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="CalfPerforatorsLeftDiameter" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsLeftDiamter">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="CalfPerforatorsLeftCmUp1" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="CalfPerforatorsLeftCmUp1" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmUp1">
                                             </div>
 
-                                            <label for="CalfPerforatorsLeftCmBack1" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="CalfPerforatorsLeftCmBack1" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmBack1">
                                             </div>
 
-                                            <label for="CalfPerforatorsLeftDiameter1" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="CalfPerforatorsLeftDiameter1" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsLeftDiamter1">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="row">
 
-                                            <label for="CalfPerforatorsLeftCmUp2" class="col-xs-1 col-form-label">cm up</label>
+                                            <label for="CalfPerforatorsLeftCmUp2" class="control-label">cm up</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmUp2">
                                             </div>
 
-                                            <label for="CalfPerforatorsLeftCmBack2" class="col-xs-1 col-form-label">cm back</label>
+                                            <label for="CalfPerforatorsLeftCmBack2" class="control-label">cm back</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmBack2">
                                             </div>
 
-                                            <label for="CalfPerforatorsLeftDiameter2" class="col-xs-1 col-form-label">diameter</label>
+                                            <label for="CalfPerforatorsLeftDiameter2" class="control-label">diameter</label>
                                             <div class="col-sm-3">
                                                 <input class="form-control" type="text" value="" id="CalfPerforatorsLeftDiamter2">
                                             </div>

@@ -49,10 +49,12 @@ $(document).ready(function () {
 
 });
 
-    var bkColor = "white";
-    var SheetNum = location.search.split('SheetNum=')[1];
-    var fileName = "url('images/sheet" + SheetNum + bkColor + ".png')";
+ var bkColor = "white";
 
+ var SheetNum = location.pathname.split('Sheet_')[1].split('.html')[0];
+
+    var fileName = "url('images/sheet" + SheetNum + bkColor + ".png')";
+    
     $('#editor').css("background-image", fileName);
 
   sketchpad = new Sketchpad({

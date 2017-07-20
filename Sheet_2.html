@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+
+    <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+
+    <link rel="stylesheet" href="material-kit.css" >
+    
+	
+</head>
+<body style="background-color: white">
+    <ul class="nav nav-tabs nav-justified navbar-info">
+        <li><a href="Sheet_1.html">Insufficiency Evaluation I</a></li>
+        <li><a href="Sheet_2.html">Insufficiency Evaluation II</a></li>
+        <li><a href="Sheet_3.html">Post Op Venous Ablation</a></li>
+    </ul>
+
+
+             
+                <div class="unselectable" onselectstart="return false;" id="editor" style="height: 655px; width: 477px; background-position: right 30px ; position: absolute; background-repeat: no-repeat; margin-top:5px;">
+                    <div class="unselectable" onselectstart="return false;" style="width: 100%;  padding-left: 20px;  ">
+                        <div style="float: left; width: 95px;">
+                            <button id="invert">b/w</button>
+                        </div>
+
+                        <div style="float: left; width: 60px;">
+                            <button id="undo">Undo</button>
+                        </div>
+                        <div style="float: left; width: 60px;">
+                            <button id="redo" style="float: left;">Redo</button>
+                        </div>
+                        <div style="float: left; width: 60px;">
+                            <button id="clear" style="float: left;">Clear</button>
+                        </div>
+
+                        <div style="float: left; width: 70px;">
+                            <label id="sellabel" for="sel1" style="float: left; padding-right:3px;">Pen </label>
+                            <select id="sel1" name="sel1" style="margin-top: 2px;float: left; ">
+                                <option value="2">1</option> <!--  1 px is too thin. start with 2px-->
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                            </select>
+                        </div>
+                        <div style="float: left; width: 60px; padding-top: 2px">
+                            <input id="colorpicker" name="colorpicker" type="text" value="#ff0000" style="width: 20px;" />
+                        </div>
+                    </div>
+                    <canvas id="sketchpad"></canvas>
+                </div>
+
+                <div class="panel panel-default" style="float: left; width : 100%;height : 100%; padding-top:10px;">
+                    <div id="sheet2" >
+                        <div class="col-sm-4">
+                        </div>
+                        <div class="col-sm-8">
+                            <form>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">SSV</h3>
+                                    </div>
+                                    <div class="panel-body">
+     
+                                        <div class="row">
+                                            
+
+                                            <div class="form-group col-sm-6 checkbox">
+                                                <label for="SPJRefluxRight" class="chr">SPJ Reflux</label>
+                                                
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="SPJRefluxRight" value="option1">
+                                                        RT</label>
+                                             
+
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="SPJRefluxLeft" value="option2">LT
+                                                    </label>
+                                                
+                                            </div>
+                                        
+                                            <div class="form-group col-sm-6 checkbox">
+                                                <label for="" class="chr">Proximal Calf</label>
+                                                
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="ProximalCalfRight" value="option1">
+                                                        RT</label>
+                                                       
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="ProximalCalfLeft" value="option2">
+                                                    LT</label>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="form-group col-sm-6 checkbox">
+                                                <label for="" class="chr">Mid Calf</label>
+                                                
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="MidCalfRight" value="option1">
+                                                        RT</label>
+                                                        
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="MidCalfLeft" value="option2">
+                                                    LT</label>
+                                                
+                                            </div>
+                                        
+                                            <div class="form-group col-sm-6 checkbox">
+                                                <label for="" class="chr">Distal Calf</label>
+                                                
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="DistalCalfRight" value="option1">
+                                                        RT</label>
+                                                        
+                                                    <label class="form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="DistalCalfLeft" value="option2">LT
+                                                    </label>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Thigh Ext Vein</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        
+                                        <div class="row">
+
+                                            <div class="form-group col-sm-6 radio">
+                                                <label for="AASVPresentRight" class="chr">Present RT</label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="ThighExtVeinPresentRight" id="inlineRadio1" value="option1"> Y
+                                                </label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="ThighExtVeinPresentRight" id="inlineRadio2" value="option2"> N
+                                                </label>
+                                            </div>
+                                            <div class="form-group col-sm-6 radio">
+                                                <label for="AASVPresentLeft" class="chr">Present LT</label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="ThighExtVeinPresentLeft" id="inlineRadio1" value="option1"> Y
+                                                </label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="ThighExtVeinPresentLeft" id="inlineRadio2" value="option2"> N
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="form-group col-sm-6 radio">
+                                                <label for="AASVPresentRight" class="chr">Reflux RT</label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="ThighExtVeinRefluxRight" id="inlineRadio1" value="option1"> Y
+                                                </label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="ThighExtVeinRefluxRight" id="inlineRadio2" value="option2"> N
+                                                </label>
+                                            </div>
+                                            <div class="form-group col-sm-6 radio">
+                                                <label for="AASVPresentLeft" class="chr">Reflux LT</label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="ThighExtVeinRefluxLeft" id="inlineRadio1" value="option1"> Y
+                                                </label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="ThighExtVeinRefluxLeft" id="inlineRadio2" value="option2"> N
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Giacomini Vein</h3>
+                                    </div>
+                                    <div class="panel-body">
+           
+                                        <div class="row">
+
+                                            <div class="form-group col-sm-6 radio">
+                                                <label for="AASVPresentRight" class="chr">Present RT</label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="GiacominiVeinPresentRight" id="inlineRadio1" value="option1"> Y
+                                                </label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="GiacominiVeinPresentRight" id="inlineRadio2" value="option2"> N
+                                                </label>
+                                            </div>
+                                            <div class="form-group col-sm-6 radio">
+                                                <label for="AASVPresentLeft" class="chr">Present LT</label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="GiacominiVeinPresentLeft" id="inlineRadio1" value="option1"> Y
+                                                </label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="GiacominiVeinPresentLeft" id="inlineRadio2" value="option2"> N
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="form-group col-sm-6 radio">
+                                                <label for="AASVPresentRight" class="chr">Reflux RT</label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="GiacominiVeinRefluxRight" id="inlineRadio1" value="option1"> Y
+                                                </label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="GiacominiVeinRefluxRight" id="inlineRadio2" value="option2"> N
+                                                </label>
+                                            </div>
+                                            <div class="form-group col-sm-6 radio">
+                                                <label for="AASVPresentLeft" class="chr">Reflux LT</label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="GiacominiVeinRefluxLeft" id="inlineRadio1" value="option1"> Y
+                                                </label>
+                                                <label class="form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="GiacominiVeinRefluxLeft" id="inlineRadio2" value="option2"> N
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Perforators</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <h6>Right Posterior Calf</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfRightCmUp" class="control-label">cm up</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmUp">
+                                                </div>
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfRightCmBack" class="control-label">cm back</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmBack">
+                                                </div>
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfRightDiameter" class="control-label">diameter</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightDiameter">
+                                                </div>
+                                            </div>
+                                        <div class="row">
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfRightCmUp1" class="control-label">cm up</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmUp1">
+                                                </div>
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfRightCmBack1" class="control-label">cm back</label>
+                                               
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmBack1">
+                                                </div>
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfRightDiameter1" class="control-label">diameter</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightDiameter1">
+                                                </div>
+                                            </div>
+                                        <div class="row">
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfRightCmUp2" class="control-label">cm up</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmUp2">
+                                                </div>
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfRightCmBack2" class="control-label">cm back</label>
+                                               
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmBack2">
+                                                </div>
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfRightDiameter2" class="control-label">diameter</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightDiameter2">
+                                                </div>
+                                            </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <h6>Left Posterior Calf</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-4 form-group label-floating">
+                                                
+                                                    <label for="PosteriorCalfLeftCmUp" class="control-label">cm up</label>
+
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmUp">
+                                                </div>
+                                                <div class="col-sm-4 form-group label-floating">
+                                                    <label for="PosteriorCalfLeftCmBack" class="control-label">cm back</label>
+
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmBack">
+                                                </div>
+                                                <div class="col-sm-4 form-group label-floating">
+                                                    <label for="PosteriorCalfLeftDiameter" class="control-label">diameter</label>
+
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftDiameter">
+                                                </div>
+
+                                            </div>
+                                        <div class="row">
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfLeftCmUp1" class="control-label">cm up</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmUp1">
+                                                </div>
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfLeftCmBack1" class="control-label">cm back</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmBack1">
+                                                </div>
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfLeftDiameter1" class="control-label">diameter</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftDiameter1">
+                                                </div>
+                                            </div>
+                                        <div class="row">
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfLeftCmUp2" class="control-label">cm up</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmUp2">
+                                                </div>
+                                            <div class="col-sm-4 form-group label-floating">
+                                                <label for="PosteriorCalfLeftCmBack2" class="control-label">cm back</label>
+                                                
+                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmBack2">
+                                                </div>
+                                                <div class="col-sm-4 form-group label-floating">
+                                                    <label for="PosteriorCalfLeftDiameter2" class="control-label">diameter</label>
+                                                    
+                                                        <input class="form-control" type="text" value="" id="PosteriorCalfLeftDiameter2">
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+            </div>
+
+            <script type="text/javascript" src="scripts/jquery.min.js"></script>
+            <script type="text/javascript" src="scripts/sketchpad.js"></script>
+            <script type="text/javascript" src="scripts/initialize.js"></script>
+            <script type="text/javascript" src="scripts/jquery.colorpicker.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+            <script type="text/javascript" src="scripts/bootstrap-datepicker.js"></script>
+            <script type="text/javascript" src="scripts/material.min.js"></script>
+            <script type="text/javascript" src="scripts/material-kit.js"></script>
+            <script type="text/javascript" src="scripts/nouislider.min.js"></script>
+
+
+
+</body>
+</html>

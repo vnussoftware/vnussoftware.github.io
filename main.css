@@ -8,16 +8,21 @@ html, body {
     white-space: nowrap;
 }
 
+.panel-title {
+    
+}
+
 .chr {
     white-space: nowrap;
     width: 13em;
-    text-align:right;
-    padding-right:2em;
+    text-align: right;
+    padding-right: 2em;
 }
 
 .h6
 {
-   font-weight:bold;
+   font-weight:bold !important;
+   text-decoration:underline;
 }
 .datepicker
 {
