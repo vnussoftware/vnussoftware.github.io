@@ -18,9 +18,9 @@
 </head>
 <body style="background-color: white">
                 <ul class="nav nav-tabs nav-justified navbar-info">
-                    <li><a data-toggle="tab" href="#sheet1">Test<!--Insufficiency Evaluation I--></a></li>
-                    <li><a data-toggle="tab" href="#sheet2">Test II<!--Insufficiency Evaluation II--></a></li>
-                    <li><a data-toggle="tab" href="#sheet3">Test III<!--Post Op Venous Ablation--></a></li>
+                    <li class="active"><a href="Sheet_1.html">Insufficiency Evaluation I</a></li>
+                    <li><a href="Sheet_2.html">Insufficiency Evaluation II</a></li>
+                    <li><a  href="Sheet_3.html">Post Op Venous Ablation</a></li>
                 </ul>
 
              
@@ -40,8 +40,8 @@
                             <button id="clear" style="float: left;">Clear</button>
                         </div>
 
-                        <div style="float: left; width: 70px;">
-                            <label id="sellabel" for="sel1" style="float: left; padding-right:3px;">Pen </label>
+                        <div style="float: left; width: 80px;">
+                            <label id="sellabel" for="sel1" style="float: left; padding-right:3px;">Draw</label>
                             <select id="sel1" name="sel1" style="margin-top: 2px;float: left; ">
                                 <option value="2">1</option> <!--  1 px is too thin. start with 2px-->
                                 <option value="3">2</option>
@@ -58,8 +58,8 @@
                 </div>
 
                 <div class="panel panel-default" style="float: left; width : 100%;height : 100%; padding-top:10px;">
-                    <div class="tab-content">
-                        <div id="sheet1" class="tab-pane fade">
+                    
+                        <div id="sheet1" >
 
                             <div class="col-sm-4">
                             </div>
@@ -94,7 +94,7 @@
                                                     <input class="form-control datepicker" type="text" value="" id="ExamDate">
                                                 </div>
                                                 <div class="col-sm-4 form-group checkbox">
-                                                    <label for="inlineCheckbox1" class="chr">Limb </label>
+                                                    <label for="inlineCheckbox1" class="chr">Limb</label>
 
                                                     <label class="form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> RT
@@ -443,33 +443,33 @@
                                             <div class="panel-body">
                                                            
                                                             <div class="row">
-                                                                <div class="col-sm-3">
+                                                                <div class="col-sm-4">
                                                                     <h6>Right Thigh</h6>
 </div>
                                                             </div>
                                                             <div class="row">
-                                                                
+                                                               
                                                                 <div class="col-sm-4 form-group label-floating">
                                                                     <label for="PerforatorsThighRightCmUp" class="control-label">cm up</label>
-                                                                   
+
                                                                         <input class="form-control" type="text" value="" id="PerforatorsThighRightCmUp">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-sm-4 form-group label-floating">
                                                                     <label for="PerforatorsThighRightCmBack" class="control-label">cm back</label>
-                                                                    
+
                                                                         <input class="form-control" type="text" value="" id="PerforatorsThighRightCmBack">
                                                                     </div>
 
                                                                 <div class="col-sm-4 form-group label-floating">
                                                                     <label for="PerforatorsThighRightDiameter" class="control-label">diameter</label>
-                                                                  
+
                                                                         <input class="form-control" type="text" value="" id="PerforatorsThighRightDiameter">
                                                                     </div>
 
                                                                 </div>
                                                             <div class="row">
-                                                                <div class="col-sm-3">
+                                                                <div class="col-sm-4">
                                                                     <h6>Left Thigh</h6>
 </div>
                                                             </div>
@@ -493,7 +493,7 @@
                                                      
                                                    
                                                             <div class="row">
-                                                                <div class="col-sm-3">
+                                                                <div class="col-sm-4">
                                                                     <h6>Right Calf</h6>
 </div>
                                                             </div>
@@ -552,7 +552,7 @@
                                                                 </div>
                                                             
                                                             <div class="row">
-                                                                <div class="col-sm-3">
+                                                                <div class="col-sm-4">
                                                                     <h6>Left Calf</h6>
                                                                 </div>
                                                             </div>
@@ -617,777 +617,7 @@
                                 </form>
                             </div>  
                         </div>
-                    </div>
-                    <div id="sheet2" class="tab-pane fade">
-                        <div class="col-sm-4">
-                        </div>
-                        <div class="col-sm-8">
-                            <form>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">SSV</h3>
-                                    </div>
-                                    <div class="panel-body">
-     
-                                        <div class="row">
-                                            
-
-                                            <div class="form-group col-sm-6 checkbox">
-                                                <label for="SPJRefluxRight" class="chr">SPJ Reflux</label>
-                                                
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="SPJRefluxRight" value="option1">
-                                                        RT</label>
-                                             
-
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="SPJRefluxLeft" value="option2">LT
-                                                    </label>
-                                                
-                                            </div>
-                                        
-                                            <div class="form-group col-sm-6 checkbox">
-                                                <label for="" class="chr">Proximal Calf</label>
-                                                
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="ProximalCalfRight" value="option1">
-                                                        RT</label>
-                                                       
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="ProximalCalfLeft" value="option2">
-                                                    LT</label>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <div class="form-group col-sm-6 checkbox">
-                                                <label for="" class="chr">Mid Calf</label>
-                                                
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="MidCalfRight" value="option1">
-                                                        RT</label>
-                                                        
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="MidCalfLeft" value="option2">
-                                                    LT</label>
-                                                
-                                            </div>
-                                        
-                                            <div class="form-group col-sm-6 checkbox">
-                                                <label for="" class="chr">Distal Calf</label>
-                                                
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="DistalCalfRight" value="option1">
-                                                        RT</label>
-                                                        
-                                                    <label class="form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="DistalCalfLeft" value="option2">LT
-                                                    </label>
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">THIGH EXT VEIN</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <
-                                        <div class="row">
-
-                                            <div class="form-group col-sm-6 radio">
-                                                <label for="AASVPresentRight" class="chr">Present RT</label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ThighExtVeinPresentRight" id="inlineRadio1" value="option1"> Y
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ThighExtVeinPresentRight" id="inlineRadio2" value="option2"> N
-                                                </label>
-                                            </div>
-                                            <div class="form-group col-sm-6 radio">
-                                                <label for="AASVPresentLeft" class="chr">Present LT</label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ThighExtVeinPresentLeft" id="inlineRadio1" value="option1"> Y
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ThighExtVeinPresentLeft" id="inlineRadio2" value="option2"> N
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <div class="form-group col-sm-6 radio">
-                                                <label for="AASVPresentRight" class="chr">Reflux RT</label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ThighExtVeinRefluxRight" id="inlineRadio1" value="option1"> Y
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ThighExtVeinRefluxRight" id="inlineRadio2" value="option2"> N
-                                                </label>
-                                            </div>
-                                            <div class="form-group col-sm-6 radio">
-                                                <label for="AASVPresentLeft" class="chr">Reflux LT</label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ThighExtVeinRefluxLeft" id="inlineRadio1" value="option1"> Y
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ThighExtVeinRefluxLeft" id="inlineRadio2" value="option2"> N
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">GIACOMINI VEIN</h3>
-                                    </div>
-                                    <div class="panel-body">
-           
-                                        <div class="row">
-
-                                            <div class="form-group col-sm-6 radio">
-                                                <label for="AASVPresentRight" class="chr">Present RT</label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="GiacominiVeinPresentRight" id="inlineRadio1" value="option1"> Y
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="GiacominiVeinPresentRight" id="inlineRadio2" value="option2"> N
-                                                </label>
-                                            </div>
-                                            <div class="form-group col-sm-6 radio">
-                                                <label for="AASVPresentLeft" class="chr">Present LT</label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="GiacominiVeinPresentLeft" id="inlineRadio1" value="option1"> Y
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="GiacominiVeinPresentLeft" id="inlineRadio2" value="option2"> N
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <div class="form-group col-sm-6 radio">
-                                                <label for="AASVPresentRight" class="chr">Reflux RT</label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="GiacominiVeinRefluxRight" id="inlineRadio1" value="option1"> Y
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="GiacominiVeinRefluxRight" id="inlineRadio2" value="option2"> N
-                                                </label>
-                                            </div>
-                                            <div class="form-group col-sm-6 radio">
-                                                <label for="AASVPresentLeft" class="chr">Reflux LT</label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="GiacominiVeinRefluxLeft" id="inlineRadio1" value="option1"> Y
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="GiacominiVeinRefluxLeft" id="inlineRadio2" value="option2"> N
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Perforators</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <h6>Right Posterior Calf</h6>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfRightCmUp" class="control-label">cm up</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmUp">
-                                                </div>
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfRightCmBack" class="control-label">cm back</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmBack">
-                                                </div>
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfRightDiameter" class="control-label">diameter</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightDiameter">
-                                                </div>
-                                            </div>
-                                        <div class="row">
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfRightCmUp1" class="control-label">cm up</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmUp1">
-                                                </div>
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfRightCmBack1" class="control-label">cm back</label>
-                                               
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmBack1">
-                                                </div>
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfRightDiameter1" class="control-label">diameter</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightDiameter1">
-                                                </div>
-                                            </div>
-                                        <div class="row">
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfRightCmUp2" class="control-label">cm up</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmUp2">
-                                                </div>
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfRightCmBack2" class="control-label">cm back</label>
-                                               
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightCmBack2">
-                                                </div>
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfRightDiameter2" class="control-label">diameter</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfRightDiameter2">
-                                                </div>
-                                            </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <h6>Left Posterior Calf</h6>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-4 form-group label-floating">
-                                                
-                                                    <label for="PosteriorCalfLeftCmUp" class="control-label">cm up</label>
-
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmUp">
-                                                </div>
-                                                <div class="col-sm-4 form-group label-floating">
-                                                    <label for="PosteriorCalfLeftCmBack" class="control-label">cm back</label>
-
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmBack">
-                                                </div>
-                                                <div class="col-sm-4 form-group label-floating">
-                                                    <label for="PosteriorCalfLeftDiameter" class="control-label">diameter</label>
-
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftDiameter">
-                                                </div>
-
-                                            </div>
-                                        <div class="row">
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfLeftCmUp1" class="control-label">cm up</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmUp1">
-                                                </div>
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfLeftCmBack1" class="control-label">cm back</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmBack1">
-                                                </div>
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfLeftDiameter1" class="control-label">diameter</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftDiameter1">
-                                                </div>
-                                            </div>
-                                        <div class="row">
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfLeftCmUp2" class="control-label">cm up</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmUp2">
-                                                </div>
-                                            <div class="col-sm-4 form-group label-floating">
-                                                <label for="PosteriorCalfLeftCmBack2" class="control-label">cm back</label>
-                                                
-                                                    <input class="form-control" type="text" value="" id="PosteriorCalfLeftCmBack2">
-                                                </div>
-                                                <div class="col-sm-4 form-group label-floating">
-                                                    <label for="PosteriorCalfLeftDiameter2" class="control-label">diameter</label>
-                                                    
-                                                        <input class="form-control" type="text" value="" id="PosteriorCalfLeftDiameter2">
-                                                    </div>
-                                                </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div id="sheet3" class="tab-pane fade">
-                        <div class="col-sm-4">
-                        </div>
-                        <div class="col-sm-8">
-                            <form>
-                                <div class="row">
-                                    <div class="col-sm-4 form-group label-floating">
-                                        <label for="PatientName" class="control-label">Patient Name</label>
-                                      
-                                            <input class="form-control" type="text" value="" id="PatientName">
-                                        </div>
-                                    <div class="col-sm-4 form-group label-floating">
-                                        <label for="DOB" class="control-label">DOB</label>
-                                        
-                                            <input class="form-control datepicker" type="text" value="" id="DOB">
-                                        </div>
-                                    </div>
-                                <div class="row">
-
-                                    <div class="col-sm-4 form-group label-floating">
-                                        <label for="Date" class="control-label">Date</label>
-                                        
-                                            <input class="form-control datepicker" type="text" value="" id="Date">
-                                        </div>
-                                    <div class="col-sm-4 form-group checkbox">
-                                        <label for="inlineCheckbox1" class="chr">Limb</label>
-                                        
-                                            <label class="form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> RT
-                                            </label>
-                                            <label class="form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2"> LT
-                                            </label>
-
-                                        </div>
-
-
-                                    <div class="col-sm-4 form-group checkbox">
-                                        <label class="form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Bilateral
-                                        </label>
-                                    </div>
-                                    </div>
-                                <div class="row">
-                                    <div class="col-sm-4 form-group label-floating">
-                                        <label for="ProcedureDate" class="control-label">Procedure Date</label>
-                                        
-                                            <input class="form-control datepicker" type="text" value="" id="ProcedureDate">
-                                        </div>
-                                    <div class="col-sm-4 form-group label-floating">
-                                        <label for="TimePostOp" class="control-label">Time Post-Op</label>
-                                        
-                                            <input class="form-control" type="text" value="" id="TimePostOp">
-                                        </div>
-                                    </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">PATIENT HISTORY</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-2 form-group checkbox">
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> DVT
-                                                </label>
-                                            </div>
-                                            <div class="col-sm-2 form-group checkbox">
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Diabetes
-                                                </label>
-                                            </div>
-                                            <div class="col-sm-2 form-group checkbox">
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Blood Thinners
-                                                </label>
-                                            </div>
-                                            <div class="col-sm-2 form-group checkbox">
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Vein strip
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">DEEP VENOUS EVALUATION (DVT)</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-2">
-                                                <label></label>
-                                            </div>
-                                            <div class="col-sm-2 form-group radio">
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="DVT" id="inlineRadio1" value="option1"> Yes
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="DVT" id="inlineRadio2" value="option2"> No
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">GREATER SAPHENOUS VEIN</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-
-                                            <label for="" class="control-label"></label>
-                                            <label for="" class="control-label">SFJ CLOT =</label>
-                                            <label for="" class="col-xs-2 col-form-label"></label>
-                                            <label for="" class="col-xs-2 col-form-label">RT</label>
-                                            <label for="" class="col-xs-2 col-form-label">LT</label>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="" class="control-label">GSV</label>
-                                            <label for="" class="control-label">Prox</label>
-                                            <label for="" class="control-label">OCCLUDED</label>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVProxOccludedRight">
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVProxOccludedLeft">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="" class="control-label"></label>
-                                            <label for="" class="control-label">Mid</label>
-                                            <label for="" class="control-label">OCCLUDED</label>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVMidOccludedRight">
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVMidOccludedLeft">
-                                            </div>
-
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="" class="control-label"></label>
-                                            <label for="" class="control-label">Dist</label>
-                                            <label for="" class="control-label">OCCLUDED</label>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVDistOccludedRight">
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVDistOccludedLeft">
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <label for="" class="control-label">GSV B-K</label>
-                                            <label for="" class="control-label">Prox</label>
-                                            <label for="" class="control-label">OCCLUDED</label>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVBKProxOccludedRight">
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVBKProxOccludedLeft">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="" class="control-label"></label>
-                                            <label for="" class="control-label">Mid</label>
-                                            <label for="" class="control-label">OCCLUDED</label>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVBKMidOccludedRight">
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVBKMidOccludedLeft">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="" class="control-label"></label>
-                                            <label for="" class="control-label">Dist</label>
-                                            <label for="" class="control-label">OCCLUDED</label>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVBKDistOccludedRight">
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="GSVBKDistOccludedLeft">
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <label for="" class="control-label"></label>
-                                            <label for="" class="col-xs-2 col-form-label">AL Branch Noted:</label>
-                                            <div class="col-sm-2">
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ALBranchNotedRight" id="inlineRadio1" value="option1"> Yes
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ALBranchNotedRight" id="inlineRadio2" value="option2"> No
-                                                </label>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ALBranchNotedLeft" id="inlineRadio1" value="option1"> Yes
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="ALBranchNotedLeft" id="inlineRadio2" value="option2"> No
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <label for="" class="col-xs-2 col-form-label"></label>
-                                            <label for="" class="control-label">OCCLUDED</label>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="ALBranchNotedOccludedRight">
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="ALBranchNotedOccludedLeft">
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <label for="" class="control-label"></label>
-                                            <label for="" class="col-xs-2 col-form-label">PM Branch Noted:</label>
-                                            <div class="col-sm-2">
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="PMBranchNotedRight" id="inlineRadio1" value="option1"> Yes
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="PMBranchNotedRight" id="inlineRadio2" value="option2"> No
-                                                </label>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="PMBranchNotedLeft" id="inlineRadio1" value="option1"> Yes
-                                                </label>
-                                                <label class="form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="PMBranchNotedLeft" id="inlineRadio2" value="option2"> No
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <label for="" class="col-xs-2 col-form-label"></label>
-                                            <label for="" class="control-label">OCCLUDED</label>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="PMBranchNotedOccludedRight">
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <input class="form-control" type="text" value="" id="PMBranchNotedOccludedLeft">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">THIGH PERFORATORS</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-1">
-                                                <label><u>Right</u></label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="ThighPerforatorsRightCmUp" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsRightCmUp">
-                                            </div>
-
-                                            <label for="ThighPerforatorsRightCmBack" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsRightCmBack">
-                                            </div>
-
-                                            <label for="ThighPerforatorsRightDiameter" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsRightDiamter">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="ThighPerforatorsRightCmUp1" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsRightCmUp1">
-                                            </div>
-
-                                            <label for="ThighPerforatorsRightCmBack1" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsRightCmBack1">
-                                            </div>
-
-                                            <label for="ThighPerforatorsRightDiameter1" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsRightDiamter1">
-                                            </div>
-
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-1">
-                                                <label><u>Left</u></label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="ThighPerforatorsLeftCmUp" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsLeftCmUp">
-                                            </div>
-
-                                            <label for="ThighPerforatorsLeftCmBack" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsLeftCmBack">
-                                            </div>
-
-                                            <label for="ThighPerforatorsLeftDiameter" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsLeftDiamter">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="ThighPerforatorsLeftCmUp1" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsLeftCmUp1">
-                                            </div>
-
-                                            <label for="ThighPerforatorsLeftCmBack1" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsLeftCmBack1">
-                                            </div>
-
-                                            <label for="ThighPerforatorsLeftDiameter1" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="ThighPerforatorsLeftDiamter1">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">CALF PERFORATORS</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-1">
-                                                <label><u>Right</u></label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="CalfPerforatorsRightCmUp" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmUp">
-                                            </div>
-
-                                            <label for="CalfPerforatorsRightCmBack" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmBack">
-                                            </div>
-
-                                            <label for="CalfPerforatorsRightDiameter" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsRightDiamter">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="CalfPerforatorsRightCmUp1" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmUp1">
-                                            </div>
-
-                                            <label for="CalfPerforatorsRightCmBack1" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmBack1">
-                                            </div>
-
-                                            <label for="CalfPerforatorsRightDiameter1" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsRightDiamter1">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="CalfPerforatorsRightCmUp2" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmUp2">
-                                            </div>
-
-                                            <label for="CalfPerforatorsRightCmBack2" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsRightCmBack2">
-                                            </div>
-
-                                            <label for="CalfPerforatorsRightDiameter2" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsRightDiamter2">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-1">
-                                                <label><u>Left</u></label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="CalfPerforatorsLeftCmUp" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmUp">
-                                            </div>
-
-                                            <label for="CalfPerforatorsLeftCmBack" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmBack">
-                                            </div>
-
-                                            <label for="CalfPerforatorsLeftDiameter" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsLeftDiamter">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="CalfPerforatorsLeftCmUp1" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmUp1">
-                                            </div>
-
-                                            <label for="CalfPerforatorsLeftCmBack1" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmBack1">
-                                            </div>
-
-                                            <label for="CalfPerforatorsLeftDiameter1" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsLeftDiamter1">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-
-                                            <label for="CalfPerforatorsLeftCmUp2" class="control-label">cm up</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmUp2">
-                                            </div>
-
-                                            <label for="CalfPerforatorsLeftCmBack2" class="control-label">cm back</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsLeftCmBack2">
-                                            </div>
-
-                                            <label for="CalfPerforatorsLeftDiameter2" class="control-label">diameter</label>
-                                            <div class="col-sm-3">
-                                                <input class="form-control" type="text" value="" id="CalfPerforatorsLeftDiamter2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                    
             </div>
 
             <script type="text/javascript" src="scripts/jquery.min.js"></script>
